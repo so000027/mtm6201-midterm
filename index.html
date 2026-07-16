@@ -11,48 +11,48 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <ul class="skip-links">
+        <li><a href="#main">Skip to main content</a></li>
+    </ul>
     <header>
         <div class="container">
-            <ul class="skip-links">
-                <li><a href="#main">Skip to main content</a></li>
-            </ul>
-        </div>
-        <section id="hero">
-            <div class="container">
-                <img srcset="images/hero-background-390.webp 390w,
-                images/hero-background-768.webp 768w,
-                images/hero-background-1440.webp 1440w"
-                sizes="100vw"
-                src="images/hero-background.jpg"
-                alt="Barista working in coffee shop">
-                <div id="hero-text">
-                    <h1>Experience Coffee Like Never Before</h1>
-                    <p>We craft more than beverages; we curate memories, one flavourful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.</p>
-                    <a class="link-button" href="">Explore our menu</a>
+            <nav id="navbar" aria-label="Navigation Bar">
+                <div class="container">
+                    <a class="logo" href="index.html" aria-current="page">
+                        <img src="/images/my-coffee-shop-logo.svg" alt="My Coffee House">
+                    </a>
+                    <ul class="nav-menu">
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Menu</a></li>
+                        <li><a href="">Locations</a></li>
+                    </ul>
+                    <button class="menu-toggle" aria-label="Menu Button">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="white" stroke-width="2" aria-hidden="true">
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="18" x2="21" y2="18"/>
+                        </svg>
+                    </button>
                 </div>
-            </div>
-        </section>
-        <nav id="navbar" aria-label="Navigation Bar">
-            <div class="container">
-                <a class="logo" href="index.html" aria-current="page">
-                    <img src="/images/my-coffee-shop-logo.svg" alt="My Coffee House">
-                </a>
-                <ul class="nav-menu">
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Menu</a></li>
-                    <li><a href="">Locations</a></li>
-                </ul>
-                <button class="menu-toggle" aria-label="Menu Button">
-                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="white" stroke-width="2" aria-hidden="true">
-                    <line x1="3" y1="6" x2="21" y2="6"/>
-                    <line x1="3" y1="12" x2="21" y2="12"/>
-                    <line x1="3" y1="18" x2="21" y2="18"/>
-                    </svg>
-                </button>
-            </div>
-        </nav>
+            </nav>
+            <section id="hero">
+                <div class="container">
+                    <img srcset="images/hero-background-390.webp 390w,
+                    images/hero-background-768.webp 768w,
+                    images/hero-background-1440.webp 1440w"
+                    sizes="100vw"
+                    src="images/hero-background.jpg"
+                    alt="Barista working in coffee shop">
+                    <div id="hero-text">
+                        <h1>Experience Coffee Like Never Before</h1>
+                        <p>We craft more than beverages; we curate memories, one flavourful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.</p>
+                        <a class="link-button" href="">Explore our menu</a>
+                    </div>
+                </div>
+            </section>
+        </div>
     </header>
-    <main aria-label="Main Content">
+    <main id="main" aria-label="Main Content">
         <section id="welcome">
             <div class="container">
                 <p class="eyebrow">Welcome to My Coffee House</p>
@@ -126,22 +126,22 @@
                         <img src="images/testimonial-1.jpeg" alt="Jane D. sipping from a mug">
                         <blockquote>
                             <p>"I always make a point to visit My Coffee House when in Ottawa. Delicious coffee and friendly service."</p>
+                            <p><cite>Jane D., Toronto</cite></p>
                         </blockquote>
-                        <cite>Jane D., Toronto</cite>
                     </li>
                     <li id="testimonial-2">
                         <img src="images/testimonial-2.jpeg" alt="Scott S. smiling in coffee shop">
                         <blockquote>
                             <p>"Great atmosphere to get some work done while enjoying a cup or two of incredible coffee."</p>
+                            <p><cite>Scott S., Ottawa</cite></p>
                         </blockquote>
-                        <cite>Scott S., Ottawa</cite>
                     </li>
                     <li id="testimonial-3">
                         <img src="images/testimonial-3.jpeg" alt="Susie F. enjoying a bevarage while on her laptop">
                         <blockquote>
                             <p>"Best coffee in Ottawa and the service is top notch. Would highly recommend a visit."</p>
+                            <p><cite>Susie F., Ottawa</cite></p>
                         </blockquote>
-                        <cite>Susie F., Ottawa</cite>
                     </li>
                 </ul>
             </div>
