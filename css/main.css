@@ -94,12 +94,12 @@ header {
 .navbar .logo {
     flex-grow: 1;
 }
-/* .navbar .logo a {
+.navbar .logo a {
     transition: filter 0.25s ease-in-out;
 }
 .navbar .logo a:hover, .navbar .logo a:focus {
     filter: invert(1);
-} */
+}
 .nav-menu {
     display: none;
 }
