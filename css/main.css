@@ -64,7 +64,7 @@ header {
 .skip-link {
     position: absolute;
     z-index: 9999;
-    top: -3em;
+    top: -3rem;
     background-color: var(--black);
     color: var(--gold);
     opacity: 0;
@@ -81,6 +81,16 @@ header {
 
 /* NAVIGATION */
 
+@keyframes descend {
+    0% {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .navbar {
     position: absolute;
     width: 100vw;
@@ -90,6 +100,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    animation: descend 0.5s ease-in-out 0s;
 }
 .navbar .logo {
     flex-grow: 1;
