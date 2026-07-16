@@ -279,6 +279,10 @@ main {
     flex-direction: column;
     gap: 4rem;
 }
+#about-us .container img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
 #about-us-text {
     display: flex;
     flex-direction: column;
@@ -473,9 +477,6 @@ footer .container {
     #about-us .container {
         gap: 6rem;
     }
-    #about-us h2 {
-        width: 75%;
-    }
 
     #testimonials {
         padding: 6rem 0 3rem;
@@ -569,10 +570,12 @@ footer .container {
         padding: 8rem 0;
     }
     #about-us .container {
+        flex-direction: row;
+        align-items: center;
         gap: 8rem;
     }
-    #about-us h2 {
-        width: 50%;
+    #about-us .container img {
+        width: 50%;   
     }
 
     #testimonials {
