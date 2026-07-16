@@ -5,28 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
-        <nav>
+        <div class="container">
+            <ul class="skip-links">
+                <li><a href="#main">Skip to main content</a></li>
+            </ul>
+        </div>
+        <nav id="navbar" aria-label="Navigation Bar">
             <div class="container">
-                <div class="logo">
+                <a class="logo" href="index.html" aria-current="page">
                     <img src="/images/my-coffee-shop-logo.svg" alt="My Coffee House">
-                </div>
-                <div class="nav-menu">
-                    <a href="">About Us</a>
-                    <a href="">Menu</a>
-                    <a href="">Locations</a>
-                </div>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Menu</a></li>
+                    <li><a href="">Locations</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Menu Button">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="white" stroke-width="2" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>
+                </button>
             </div>
         </nav>
         <section id="hero">
             <div class="container">
+                <img srcset="images/hero-background-390.webp 390w,
+                images/hero-background-768.webp 768w,
+                images/hero-background-1440.webp 1440w"
+                sizes="100vw"
+                src="images/hero-background.jpg"
+                alt="">
                 <div id="hero-text">
                     <h1>Experience Coffee Like Never Before</h1>
                     <p>We craft more than beverages; we curate memories, one flavourful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.</p>
@@ -35,41 +52,41 @@
             </div>
         </section>
     </header>
-    <main>
+    <main aria-label="Main Content">
         <section id="welcome">
             <div class="container">
                 <h2>Welcome to My Coffee House</h2>
                 <h3>Experience A New Way To Taste Coffee</h3>
-                <div id="quick-stack-images">
-                    <img src="images/latte.jpeg" alt="">
-                    <img src="images/coffee-beans.jpeg" alt="">
-                    <img src="images/pouring-coffee.jpeg" alt="">
-                    <img src="images/three-cups.jpeg" alt="">
-                    <img src="images/smiling-employee.jpeg" alt="">
-                </div>
+                <ul id="quick-stack-images">
+                    <li><img src="images/latte.jpeg" alt=""></li>
+                    <li><img src="images/coffee-beans.jpeg" alt=""></li>
+                    <li><img src="images/pouring-coffee.jpeg" alt=""></li>
+                    <li><img src="images/three-cups.jpeg" alt=""></li>
+                    <li><img src="images/smiling-employee.jpeg" alt=""></li>
+                </ul>
             </div>
         </section>
         <section id="what-we-offer">
             <div class="container">
                 <h2>What We Offer</h2>
                 <h3>Why Visit Us?</h3>
-                <div id="what-we-offer-cards">
-                    <div id="fair-trade">
+                <ul id="what-we-offer-cards">
+                    <li id="fair-trade">
                         <img src="images/fair-trade.svg" alt="">
                         <h4>Fair Trade Coffee</h4>
                         <p>We build direct relationships with the farmers and producers who help in the development of delicious, sustainable and organic coffee.</p>
-                    </div>
-                    <div id="local-baked-goods">
+                    </li>
+                    <li id="local-baked-goods">
                         <img src="images/local-baked-goods.svg" alt="">
                         <h4>Local Baked Goods</h4>
                         <p>We use local products to bake our goods and bring in a variety of treats from local bakers with our community.</p>
-                    </div>
-                    <div id="made-with-love">
+                    </li>
+                    <li id="made-with-love">
                         <img src="images/made-with-love.svg" alt="">
                         <h4>Made With Love</h4>
                         <p>We value our customers and make it our priority to serve everyone with respect and a friendly smile to start their day off right.</p>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </section>
         <section id="menu-location">
@@ -102,29 +119,29 @@
         <section id="testimonials">
             <h2>Testimonials</h2>
             <h3>What Our Customers Say About Us</h3>
-            <div id="testimonial-cards">
-                <figure id="testimonial-1">
+            <ul id="testimonial-cards">
+                <li id="testimonial-1">
                     <blockquote>
                         <p>"I always make a point to visit My Coffee House when in Ottawa. Delicious coffee and friendly service."</p>
                     </blockquote>
-                    <figcaption>Jane D., Toronto</figcaption>
-                </figure>
-                <figure id="testimonial-2">
+                    <cite>Jane D., Toronto</cite>
+                </li>
+                <li id="testimonial-2">
                     <blockquote>
                         <p>"Great atmosphere to get some work done while enjoying a cup or two of incredible coffee."</p>
                     </blockquote>
-                    <figcaption>Scott S., Ottawa</figcaption>
-                </figure>
-                <figure id="testimonial-3">
+                    <cite>Scott S., Ottawa</cite>
+                </li>
+                <li id="testimonial-3">
                     <blockquote>
                         <p>"Best coffee in Ottawa and the service is top notch. Would highly recommend a visit."</p>
                     </blockquote>
-                    <figcaption>Susie F., Ottawa</figcaption>
-                </figure>
-            </div>
+                    <cite>Susie F., Ottawa</cite>
+                </li>
+            </ul>
         </section>
     </main>
-    <footer>
+    <footer aria-label="Footer">
         <div class="container">
             <p>© My Coffee House 2026</p>
         </div>
