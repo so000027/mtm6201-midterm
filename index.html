@@ -16,41 +16,43 @@
     </ul>
     <header>
         <div class="container">
-            <nav id="navbar" aria-label="Navigation Bar">
-                <div class="container">
-                    <a class="logo" href="index.html" aria-current="page">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html" aria-label="My Coffee House Home" aria-current="page">
                         <img src="/images/my-coffee-shop-logo.svg" alt="My Coffee House">
                     </a>
-                    <ul class="nav-menu">
+                </div>
+                <nav class="nav-menu" aria-label="Navigation Menu">
+                    <ul>
                         <li><a href="">About Us</a></li>
                         <li><a href="">Menu</a></li>
                         <li><a href="">Locations</a></li>
                     </ul>
-                    <button class="menu-toggle" aria-label="Menu Button">
-                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="white" stroke-width="2" aria-hidden="true">
-                        <line x1="3" y1="6" x2="21" y2="6"/>
-                        <line x1="3" y1="12" x2="21" y2="12"/>
-                        <line x1="3" y1="18" x2="21" y2="18"/>
-                        </svg>
-                    </button>
-                </div>
-            </nav>
-            <section id="hero">
-                <div class="container">
-                    <img srcset="images/hero-background-390.webp 390w,
-                    images/hero-background-768.webp 768w,
-                    images/hero-background-1440.webp 1440w"
-                    sizes="100vw"
-                    src="images/hero-background.jpg"
-                    alt="Barista working in coffee shop">
-                    <div id="hero-text">
-                        <h1>Experience Coffee Like Never Before</h1>
-                        <p>We craft more than beverages; we curate memories, one flavourful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.</p>
-                        <a class="link-button" href="">Explore our menu</a>
-                    </div>
-                </div>
-            </section>
+                </nav>
+                <button class="menu-toggle" aria-label="Menu Button">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="white" stroke-width="2" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>
+                </button>
+            </div>
         </div>
+        <section id="hero">
+            <img srcset="images/hero-background-390.webp 390w,
+                images/hero-background-768.webp 768w,
+                images/hero-background-1440.webp 1440w"
+                sizes="100vw"
+                src="images/hero-background.jpg"
+                alt="Barista working in coffee shop">
+            <div class="overlay">
+                <div class="container" id="hero-text">
+                    <h1>Experience Coffee Like Never Before</h1>
+                    <p>We craft more than beverages; we curate memories, one flavourful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.</p>
+                    <a class="link-button" href="">Explore our menu</a>
+                </div>
+            </div>
+        </section>
     </header>
     <main id="main" aria-label="Main Content">
         <section id="welcome">
