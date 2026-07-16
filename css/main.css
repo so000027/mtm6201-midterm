@@ -503,7 +503,7 @@ footer .container {
         grid-row: 2;
     }
 
-    #footer {
+    footer {
         padding-bottom: 9rem;
     }
 }
@@ -587,7 +587,7 @@ footer .container {
         flex-direction: row;
     }
 
-    #footer {
+    footer {
         padding-bottom: 12rem;
     }
 }
